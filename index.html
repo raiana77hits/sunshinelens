@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sunshine Lens | Óculos de sol e de grau com entrega para todo o Brasil</title>
+<meta name="description" content="Óculos de sol e armações de grau com preço de fábrica. Pedido pelo WhatsApp, parcelamento em até 4x e entrega para todo o Brasil.">
+<meta property="og:title" content="Sunshine Lens | Óculos que elevam seu estilo">
+<meta property="og:description" content="Óculos de sol e armações de grau com preço de fábrica, entregues em todo o Brasil.">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Store","name":"Sunshine Lens","description":"Loja online de óculos de sol e armações de grau com entrega para todo o Brasil.","telephone":"+55 11 94591-2508","areaServed":"BR","paymentAccepted":"Pix, cartão de débito, cartão de crédito, dinheiro","sameAs":["https://www.instagram.com/sunshinelens_/"]}
+</script>
+<script>document.documentElement.classList.add("js")</script>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500;700;800&family=Figtree:wght@400;500;600&family=Pacifico&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#FFF1DC; --surface:#FFFAF2; --ink:#2E1A3A; --muted:#6B5670;
+  --sun:#F7931E; --sun2:#FFC23D; --red:#E2442B; --line:#EDD8BA;
+  --band:#2E1A3A; --band-ink:#FFF1DC; --wa:#1F9D55;
+  color-scheme:light;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+*,*::before,*::after{box-sizing:inherit}
+html,body{height:auto}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 76px)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Figtree,system-ui,-apple-system,"Segoe UI",sans-serif;font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+h1,h2,h3{font-family:Rubik,"Arial Rounded MT Bold",system-ui,sans-serif;line-height:1.05;margin:0}
+h2{font-weight:800;font-size:clamp(1.9rem,4.6vw,2.9rem);letter-spacing:-.015em}
+h3{font-weight:700;font-size:1.25rem}
+p{margin:0}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font:600 1rem Figtree,system-ui,sans-serif;text-decoration:none;border-radius:999px;padding:15px 26px;border:2px solid transparent;cursor:pointer;transition:transform .15s}
+.btn:active{transform:scale(.97)}
+.btn:focus-visible{outline:3px solid var(--sun);outline-offset:3px}
+.btn-wa{background:var(--wa);color:#fff}
+.btn-ghost{border-color:currentColor;color:var(--ink)}
+.btn svg{width:20px;height:20px;flex:none}
+
+/* Header */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:66px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+.brand svg{width:42px;height:42px}
+.brand b{font:800 1.2rem Rubik,system-ui,sans-serif;color:var(--red);letter-spacing:-.01em}
+.top .btn{padding:10px 18px;font-size:.95rem}
+
+/* Hero */
+.hero{position:relative;overflow:hidden;padding:56px 0 0}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:24px;align-items:center}
+.hero h1{font-weight:800;font-size:clamp(2.9rem,7.4vw,5.4rem);color:var(--red);letter-spacing:-.025em;margin-bottom:22px}
+.hero h1 .hl{font-family:Pacifico,"Brush Script MT",cursive;font-weight:400;font-size:1.1em;letter-spacing:0;color:var(--ink);line-height:1.25;white-space:nowrap}
+.hero .sub{font-size:1.2rem;max-width:30em;color:var(--ink);margin-bottom:30px}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:36px}
+.facts{display:grid;grid-auto-flow:column;grid-auto-columns:max-content;gap:10px 22px;margin:0 0 36px;padding:0;list-style:none;color:var(--muted);font-size:.97rem}
+.facts li{display:flex;align-items:flex-start;gap:8px}
+.facts li::before{content:"";flex:none;width:9px;height:9px;margin-top:.5em;border-radius:50%;background:var(--sun)}
+.scene{width:100%;height:auto}
+.horizon{height:6px;background:var(--sun);margin-top:-4px}
+
+
+/* Animações */
+#prog{position:fixed;top:0;left:0;height:3px;width:100%;background:linear-gradient(90deg,var(--sun),var(--red));transform:scaleX(0);transform-origin:0 50%;z-index:50;pointer-events:none}
+.top{transition:background .3s,box-shadow .3s}
+.top.scrolled{background:rgba(255,241,220,.82);-webkit-backdrop-filter:saturate(1.4) blur(12px);backdrop-filter:saturate(1.4) blur(12px);box-shadow:0 6px 20px rgba(46,26,58,.07)}
+.hero h1,.hero .sub,.hero .ctas,.hero .facts{animation:up .8s cubic-bezier(.2,.8,.2,1) both}
+.hero .sub{animation-delay:.12s}.hero .ctas{animation-delay:.24s}.hero .facts{animation-delay:.36s}
+@keyframes up{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
+.scene{transition:transform .25s ease-out;will-change:transform}
+.js .rv{opacity:0;transform:translateY(24px);transition:opacity .7s cubic-bezier(.2,.8,.2,1),transform .7s cubic-bezier(.2,.8,.2,1);transition-delay:var(--d,0s)}
+.js .rv.in{opacity:1;transform:none}
+.lens::after{content:"";position:absolute;inset:0;z-index:3;pointer-events:none;background:linear-gradient(110deg,transparent 35%,rgba(255,255,255,.35) 50%,transparent 65%);transform:translateX(-120%)}
+@media (hover:hover){
+  .card,.gcard{transition:transform .3s ease,box-shadow .3s ease}
+  .card:hover,.gcard:hover{transform:translateY(-5px);box-shadow:0 16px 34px rgba(46,26,58,.12)}
+  .card:hover .lens::after{transform:translateX(120%);transition:transform .9s ease}
+  .btn{transition:transform .2s ease,box-shadow .2s ease,background .2s}
+  .btn:hover{transform:translateY(-2px);box-shadow:0 8px 18px rgba(46,26,58,.18)}
+  .btn:active{transform:scale(.97)}
+  .why-photo img{transition:transform .8s ease}.why-photo:hover img{transform:scale(1.04)}
+}
+.band svg.bigsun{animation:spin 60s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+@media (prefers-reduced-motion:reduce){
+  .hero h1,.hero .sub,.hero .ctas,.hero .facts,.band svg.bigsun{animation:none}
+  .js .rv{opacity:1;transform:none;transition:none}
+  .scene{transition:none}.card,.gcard,.btn{transition:none!important}
+}
+
+
+/* Provador virtual */
+.tryb{position:relative}
+.tryb .new{position:absolute;top:-9px;right:-6px;background:var(--red);color:#fff;font:800 .64rem Figtree,system-ui,sans-serif;letter-spacing:.06em;text-transform:uppercase;padding:3px 8px;border-radius:999px}
+.try{position:fixed;inset:0;z-index:100;background:#1d1026;color:#FFF1DC;display:flex;flex-direction:column;height:100vh;height:100dvh}
+.try[hidden]{display:none}
+.try-x{position:absolute;top:calc(10px + env(safe-area-inset-top,0px));right:12px;z-index:5;width:46px;height:46px;border-radius:50%;border:0;background:rgba(255,255,255,.16);color:#fff;font-size:1.6rem;line-height:1;cursor:pointer}
+.try-x:focus-visible,.try button:focus-visible{outline:3px solid var(--sun2);outline-offset:2px}
+.try-intro{margin:auto;max-width:440px;padding:32px 26px;text-align:center}
+.try-intro h2{margin:0 0 12px;font-size:1.8rem;line-height:1.15;color:var(--sun2)}
+.try-intro p{margin:0 0 22px;color:#EBDDF0}
+.try-intro .btn{background:var(--sun2);color:#2E1A3A}
+.try-stage{position:relative;flex:1;min-height:0;display:grid;place-items:center;overflow:hidden}
+.try-stage canvas{max-width:100%;max-height:100%;width:auto;height:auto;display:block;background:#000}
+.try-msg{position:absolute;left:12px;right:12px;bottom:14px;text-align:center;font-weight:600;background:rgba(29,16,38,.78);padding:10px 14px;border-radius:14px;font-size:.95rem}
+.try-msg:empty{display:none}
+.try-bar{padding:12px 14px calc(14px + env(safe-area-inset-bottom,0px));display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:center;background:#2A1736}
+.try-chips{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;width:100%}
+.try-chips button{display:flex;align-items:center;gap:8px;border:2px solid rgba(255,255,255,.25);background:transparent;color:#FFF1DC;border-radius:14px;padding:6px 12px 6px 8px;font:600 .88rem Figtree,system-ui,sans-serif;cursor:pointer}
+.try-chips button[aria-pressed="true"]{border-color:var(--sun2);background:rgba(255,194,61,.14)}
+.try-chips img{width:54px;height:auto;filter:drop-shadow(0 1px 2px rgba(0,0,0,.4))}
+.try-bar .btn{padding:12px 20px;font-size:.95rem}
+.try-bar .btn-shot{background:var(--sun2);color:#2E1A3A}
+.try-bar .btn-wa2{background:var(--wa);color:#fff}
+body.try-open{overflow:hidden}
+
+/* Estilos */
+section{padding:92px 0}
+.head{max-width:640px;margin-bottom:40px}
+.head p{color:var(--muted);margin-top:14px;font-size:1.1rem}
+.grid4{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:26px;padding:14px 14px 20px;display:flex;flex-direction:column}
+.lens{position:relative;isolation:isolate;aspect-ratio:1/1;overflow:hidden;border-radius:18px;background:#e9e4dc;margin-bottom:18px}
+.lens::before{content:"";position:absolute;inset:-20px;z-index:-1;background:var(--photo) center/cover;filter:blur(18px) saturate(1.1);opacity:.85}
+.lens img{position:relative;width:100%;height:100%;object-fit:contain}
+.lens.carousel{aspect-ratio:1/1;background:#e9e4dc}
+.lens.carousel::before{display:none}
+.carousel .track{display:flex;height:100%;transition:transform .7s cubic-bezier(.4,.1,.2,1);will-change:transform}
+.carousel .slide{position:relative;isolation:isolate;flex:0 0 100%;height:100%;overflow:hidden}
+.carousel .slide::before{content:"";position:absolute;inset:-20px;z-index:-1;background:var(--photo) center/cover;filter:blur(18px) saturate(1.1);opacity:.85}
+.carousel .slide img{position:relative;display:block;width:100%;height:100%;object-fit:contain}
+.carousel .dots{position:absolute;left:50%;bottom:8px;transform:translateX(-50%);display:flex;gap:6px;padding:5px 8px;border-radius:999px;background:rgba(46,26,58,.45)}
+.carousel .dots button{width:8px;height:8px;padding:0;border:0;border-radius:50%;background:rgba(255,255,255,.55);cursor:pointer;transition:background .2s,transform .2s}
+.carousel .dots button[aria-current="true"]{background:#fff;transform:scale(1.25)}
+.carousel .dots button:focus-visible{outline:2px solid var(--sun2);outline-offset:2px}
+@media (prefers-reduced-motion:reduce){.carousel .track{transition:none}}
+.card h3{margin:0 6px 8px}
+.card p{margin:0 6px 18px;color:var(--muted);font-size:.97rem;flex:1}
+.card a{margin:0 6px;font-weight:600;color:var(--ink);text-decoration-color:var(--sun);text-decoration-thickness:2px;text-underline-offset:5px}
+.card a:focus-visible{outline:3px solid var(--sun);outline-offset:3px;border-radius:4px}
+
+/* Guia */
+.guia{background:#FCE9CC;border-top:1px solid var(--line)}
+.tabs{display:inline-flex;gap:4px;padding:5px;margin-bottom:36px;background:var(--surface);border:1px solid var(--line);border-radius:999px}
+.tabs button{font:600 1rem Figtree,system-ui,sans-serif;padding:11px 26px;border:0;border-radius:999px;background:transparent;color:var(--ink);cursor:pointer;transition:background .2s,color .2s}
+.tabs button[aria-selected="true"]{background:var(--ink);color:var(--bg)}
+.tabs button:focus-visible{outline:3px solid var(--sun);outline-offset:2px}
+.painel[hidden]{display:none}
+.gtitle{font-size:1.5rem;margin:0 0 6px}
+.gsub{color:var(--muted);margin:0 0 22px}
+.painel .gtitle:not(:first-child){margin-top:52px}
+.ggrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.gcard{background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:22px 22px 20px;display:flex;flex-direction:column;gap:10px}
+.gcard h4{font:700 1.2rem/1.15 Rubik,system-ui,sans-serif;margin:0}
+.gcard p{margin:0;color:var(--muted);font-size:.97rem}
+.gtag{align-self:flex-start;background:var(--sun2);color:#2E1A3A;font:600 .78rem Figtree,system-ui,sans-serif;padding:4px 11px;border-radius:999px}
+.gline{padding-top:10px;border-top:1px dashed var(--line);font-size:.93rem!important}
+.gline b{display:block;font:700 .74rem Figtree,system-ui,sans-serif;letter-spacing:.06em;text-transform:uppercase;margin-bottom:2px}
+.gline .ok{color:#1F7A44}
+.gline .warn{color:var(--red)}
+.gcta{display:flex;flex-wrap:wrap;gap:18px 28px;align-items:center;justify-content:space-between;margin-top:56px;padding:26px 30px;background:var(--band);color:var(--band-ink);border-radius:26px}
+.gcta p{max-width:36em;margin:0;font-size:1.05rem}
+@media (max-width:900px){.ggrid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:620px){.ggrid{grid-template-columns:1fr}.gcta{padding:22px}.gcta .btn{width:100%}.tabs{display:flex}.tabs button{flex:1;padding:11px 12px}}
+
+/* Receita */
+.receita{background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.receita .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:start}
+.steps{list-style:none;margin:0;padding:0;counter-reset:s}
+.steps li{counter-increment:s;display:grid;grid-template-columns:56px 1fr;gap:18px;padding:22px 0;border-bottom:1px solid var(--line)}
+.steps li:first-child{padding-top:0}
+.steps li::before{content:counter(s);width:56px;height:56px;border-radius:50%;background:var(--sun2);color:#2E1A3A;font:800 1.5rem/56px Rubik,system-ui,sans-serif;text-align:center}
+.steps h3{margin:6px 0 6px}
+.steps p{color:var(--muted)}
+.lentes{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.lentes span{background:var(--bg);border:1px solid var(--line);border-radius:999px;padding:5px 13px;font-size:.9rem;color:var(--ink)}
+.receita .note{margin-top:22px;font-size:.93rem;color:var(--muted)}
+
+/* Por que */
+.why .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.why-photo{margin:0;border-radius:24px;overflow:hidden;aspect-ratio:1402/1122;background:var(--line);box-shadow:0 18px 40px rgba(46,26,58,.14)}
+.why-photo img{display:block;width:100%;height:100%}
+.why dl{margin:34px 0 0;display:grid;gap:22px}
+.why dt{font:700 1.2rem Rubik,system-ui,sans-serif;margin-bottom:4px}
+.why dd{margin:0;color:var(--muted)}
+
+/* Quem somos */
+.band{background:var(--band);color:var(--band-ink);position:relative;overflow:hidden}
+.band .wrap{position:relative;display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center}
+.band h2{color:var(--sun2)}
+.band p{margin-top:18px;font-size:1.12rem;max-width:34em;opacity:.92}
+.band .btn{margin-top:30px}
+.dlv{list-style:none;margin:22px 0 0;padding:0;display:grid;gap:12px}
+.dlv li{padding-left:30px;position:relative;color:var(--band-ink)}
+.dlv li::before{content:"";position:absolute;left:0;top:.5em;width:14px;height:14px;border-radius:50%;background:var(--sun2)}
+.dlv b{color:var(--sun2)}
+.prazos{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:24px}
+.prazos div{border:1px solid rgba(255,241,220,.28);border-radius:16px;padding:14px 14px 12px;display:grid;gap:2px}
+.prazos b{font:800 1.05rem Rubik,system-ui,sans-serif;color:var(--sun2)}
+.prazos span{font-size:.88rem;color:var(--band-ink)}
+@media (max-width:520px){.prazos{grid-template-columns:1fr}}
+.band svg.bigsun{width:100%;max-width:340px;justify-self:center}
+
+footer{padding:40px 0 calc(40px + 70px);color:var(--muted);font-size:.93rem}
+footer .wrap{display:flex;flex-wrap:wrap;gap:14px 32px;justify-content:space-between;align-items:center}
+footer a{text-decoration-color:var(--sun);text-underline-offset:4px}
+footer .links{display:flex;gap:22px;flex-wrap:wrap}
+footer .links a{display:inline-flex;align-items:center;gap:8px}
+footer .links svg{width:20px;height:20px;flex:none}
+footer .links a:hover svg{color:var(--sun)}
+/* Novidades */
+.news{padding:72px 0}
+.newsbox{background:var(--surface);border:1px solid var(--line);border-radius:28px;padding:40px;display:grid;grid-template-columns:1fr 1.1fr;gap:36px;align-items:center}
+.newsbox h2{margin:0 0 10px;font-size:clamp(1.6rem,3.4vw,2.2rem);line-height:1.15}
+.newsbox p{margin:0;color:var(--muted)}
+.nform{display:grid;gap:14px}
+.nform label{display:grid;gap:6px;font:600 .9rem Figtree,system-ui,sans-serif}
+.nform input{font:400 1rem Figtree,system-ui,sans-serif;padding:14px 16px;border:1.5px solid var(--line);border-radius:14px;background:#fff;color:var(--ink);width:100%}
+.nform input:focus-visible{outline:3px solid var(--sun);outline-offset:1px;border-color:var(--sun)}
+.nform input[aria-invalid="true"]{border-color:var(--red)}
+.nform .btn{border:0;cursor:pointer;background:var(--ink);color:var(--band-ink);margin-top:4px}
+.nform small{color:var(--muted);font-size:.8rem}
+.nmsg{min-height:1.2em;font-weight:600;font-size:.92rem}
+.nmsg.err{color:var(--red)}.nmsg.ok{color:#1F7A44}
+@media (max-width:820px){.newsbox{grid-template-columns:1fr;padding:28px 22px;gap:24px}.news{padding:48px 0}}
+
+
+.float{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:30;width:60px;height:60px;border-radius:50%;background:var(--wa);display:grid;place-items:center;box-shadow:0 8px 24px rgba(31,157,85,.35)}
+.float svg{width:30px;height:30px}
+.float:focus-visible{outline:3px solid var(--sun);outline-offset:3px}
+
+/* Sun motion (single load moment) */
+#rise{animation:rise 1.4s cubic-bezier(.2,.8,.2,1) both}
+@keyframes rise{from{transform:translateY(90px)}to{transform:translateY(0)}}
+@media (prefers-reduced-motion:reduce){#rise{animation:none}html{scroll-behavior:auto}}
+
+@media (max-width:760px){
+  .grid4{grid-template-columns:1fr}
+}
+@media (max-width:900px){
+  .hero .wrap,.receita .wrap,.why .wrap,.band .wrap{grid-template-columns:1fr}
+  .hero{padding-top:36px}
+  .hero .art{order:-1;max-width:420px;margin:0 auto;width:100%}
+  .why-photo{max-width:none}
+  .band svg.bigsun{max-width:220px;order:-1;justify-self:start}
+  section{padding:68px 0}
+}
+@media (max-width:380px){
+  .hero h1 .hl{font-size:1em}
+}
+@media (max-width:520px){
+  .top .btn span{display:none}
+  .hero .ctas .btn{flex:1 1 100%}
+  .facts{grid-auto-columns:1fr;gap:10px;font-size:.84rem;line-height:1.35}
+  .facts li{gap:6px}
+  .facts li::before{width:7px;height:7px;margin-top:.45em}
+}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2s.2-1.1.2-1.2-.2-.2-.5-.3Z"/></symbol>
+  <symbol id="ig" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5.5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.2" cy="6.8" r="1.2" fill="currentColor"/></symbol>
+  <symbol id="mark" viewBox="0 0 100 100">
+    <circle cx="50" cy="50" r="50" fill="#FFF1DC"/>
+    <g stroke="#F7931E" stroke-width="4" stroke-linecap="round"><line x1="50" y1="14" x2="50" y2="22"/><line x1="30" y1="20" x2="34" y2="27"/><line x1="70" y1="20" x2="66" y2="27"/><line x1="16" y1="34" x2="23" y2="38"/><line x1="84" y1="34" x2="77" y2="38"/></g>
+    <path d="M22 52a28 28 0 0 1 56 0z" fill="#F7931E"/>
+    <g fill="#2E1A3A"><path d="M14 46h30q4 0 3.4 4.5l-2 9q-1.6 7-9 7H26q-7.5 0-10.5-7L12.6 50q-1.2-4 1.4-4z"/><path d="M86 46H56q-4 0-3.4 4.5l2 9q1.6 7 9 7H74q7.5 0 10.5-7l2.9-9.5q1.2-4-1.4-4z"/><rect x="43" y="47" width="14" height="4.5" rx="2"/></g>
+    <path d="M21 52q5-2 11 0M61 52q5-2 11 0" stroke="#F7931E" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+  </symbol>
+</svg>
+
+<div class="try" id="try" role="dialog" aria-modal="true" aria-labelledby="tryT" hidden>
+  <button class="try-x" id="tryX" type="button" aria-label="Fechar">&times;</button>
+  <div class="try-intro" id="tryIntro">
+    <h2 id="tryT">Experimente em você</h2>
+    <p>Use a câmera do celular para ver como a armação fica no seu rosto. O vídeo fica só no seu aparelho: nada é gravado nem enviado.</p>
+    <button class="btn" id="tryGo" type="button">Ativar câmera</button>
+    <p id="tryErr" role="alert" style="margin:18px 0 0;color:#FFD2C8"></p>
+  </div>
+  <div class="try-stage" id="tryStage" hidden>
+    <canvas id="tryC" aria-label="Seu rosto com a armação"></canvas>
+    <div class="try-msg" id="tryMsg" role="status" aria-live="polite"></div>
+  </div>
+  <div class="try-bar" id="tryBar" hidden>
+    <div class="try-chips" id="tryChips"></div>
+    <button class="btn btn-shot" id="tryShot" type="button">Tirar foto</button>
+    <a class="btn btn-wa2" id="tryWa" href="#" target="_blank" rel="noopener">Quero esse modelo</a>
+  </div>
+</div>
+<div id="prog" aria-hidden="true"></div>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#inicio" aria-label="Sunshine Lens, início"><svg viewBox="0 0 100 100"><use href="#mark"/></svg><b>Sunshine Lens</b></a>
+    <a class="btn btn-wa" href="https://wa.me/5511945912508?text=Oi!%20Vim%20pelo%20site%20e%20quero%20ver%20os%20modelos%20da%20Sunshine%20Lens" target="_blank" rel="noopener"><svg><use href="#wa"/></svg><span>Pedir no WhatsApp</span></a>
+  </div>
+</header>
+
+<main id="inicio">
+<section class="hero" style="padding-bottom:0">
+  <div class="wrap">
+    <div>
+      <h1>Óculos que elevam sua <span class="hl">autoestima</span></h1>
+      <p class="sub">Aqui você encontra óculos de sol e óculos de grau no seu estilo e o melhor: entregamos até você.</p>
+      <div class="ctas">
+        <a class="btn btn-wa" href="https://wa.me/5511945912508?text=Oi!%20Vim%20pelo%20site%20e%20quero%20ver%20os%20modelos%20da%20Sunshine%20Lens" target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Pedir no WhatsApp</a>
+        <a class="btn btn-ghost" href="#estilos">Ver os estilos</a>
+        <button class="btn btn-ghost tryb" id="tryOpen" type="button">Experimente em você<span class="new">Novo</span></button>
+      </div>
+      <ul class="facts">
+        <li>Até 4x no cartão</li>
+        <li>Garantia na lente e na armação</li>
+        <li>Estojo, flanela e brinde</li>
+      </ul>
+    </div>
+    <div class="art">
+      <svg class="scene" viewBox="0 0 480 280" role="img" aria-label="Sol nascendo atrás de um óculos escuro, como no logo da Sunshine Lens">
+        <defs><clipPath id="sky"><rect width="480" height="262"/></clipPath></defs>
+        <g clip-path="url(#sky)"><g id="rise">
+          <g stroke="#F7931E" stroke-width="12" stroke-linecap="round">
+            <line x1="240" y1="30" x2="240" y2="4"/><line x1="160" y1="52" x2="146" y2="28"/><line x1="320" y1="52" x2="334" y2="28"/>
+            <line x1="104" y1="104" x2="80" y2="90"/><line x1="376" y1="104" x2="400" y2="90"/><line x1="76" y1="170" x2="48" y2="166"/><line x1="404" y1="170" x2="432" y2="166"/>
+          </g>
+          <circle cx="240" cy="200" r="140" fill="#FFC23D"/>
+          <circle cx="240" cy="200" r="140" fill="none" stroke="#F7931E" stroke-width="14"/>
+        </g></g>
+        <g fill="#2E1A3A">
+          <path d="M40 176h170q16 0 13 20l-10 44q-7 32-44 32h-56q-38 0-55-34l-24-46q-6-16 6-16z"/>
+          <path d="M440 176H270q-16 0-13 20l10 44q7 32 44 32h56q38 0 55-34l24-46q6-16-6-16z"/>
+          <rect x="205" y="180" width="70" height="18" rx="8"/>
+        </g>
+        <path d="M76 196q24-8 50 0M354 196q24-8 50 0" stroke="#F7931E" stroke-width="9" fill="none" stroke-linecap="round"/>
+      </svg>
+    </div>
+  </div>
+  <div class="horizon" aria-hidden="true"></div>
+</section>
+
+<section id="estilos">
+  <div class="wrap">
+    <div class="head">
+      <h2>Escolha seu estilo</h2>
+      <p>Do esportivo espelhado à armação de grau. Toque no estilo que você curte e a gente te manda os modelos disponíveis. Em dúvida entre materiais e lentes? Veja o <a href="#guia" style="color:var(--ink);font-weight:600;text-decoration-color:var(--sun);text-underline-offset:4px">guia rápido</a>.</p>
+    </div>
+    <div class="grid4">
+      <article class="card">
+        <div class="lens carousel" role="group" aria-roledescription="carrossel" aria-label="Fotos do óculos esportivo espelhado"><div class="track"><div class="slide"><img src="images/esportivo-1.jpg" width="900" height="669" alt="Óculos esportivo de lente espelhada vermelha, segurado na mão com o pôr do sol ao fundo"></div><div class="slide"><img src="images/esportivo-2.jpg" width="900" height="669" alt="Óculos esportivo de lente espelhada vermelha sobre uma mureta, visto de lado" loading="lazy"></div><div class="slide"><img src="images/esportivo-3.jpg" width="900" height="720" alt="Óculos esportivo de lente espelhada vermelha sobre uma mureta, visto de frente" loading="lazy"></div><div class="slide"><img src="images/esportivo-4.jpg" width="900" height="600" alt="Óculos esportivo branco de lente espelhada vermelha sobre uma mureta, visto de frente" loading="lazy"></div><div class="slide"><img src="images/esportivo-5.jpg" width="900" height="600" alt="Óculos esportivo branco de lente espelhada vermelha sobre uma mureta, visto de lado" loading="lazy"></div><div class="slide"><img src="images/esportivo-6.jpg" width="900" height="655" alt="Óculos esportivo grafite de lente espelhada azul sobre uma mureta, visto de lado" loading="lazy"></div><div class="slide"><img src="images/esportivo-7.jpg" width="900" height="467" alt="Óculos esportivo grafite de lente espelhada azul sobre uma mureta, visto de frente" loading="lazy"></div></div><div class="dots"><button type="button" aria-label="Ver foto 1" aria-current="true"></button><button type="button" aria-label="Ver foto 2"></button><button type="button" aria-label="Ver foto 3"></button><button type="button" aria-label="Ver foto 4"></button><button type="button" aria-label="Ver foto 5"></button><button type="button" aria-label="Ver foto 6"></button><button type="button" aria-label="Ver foto 7"></button></div></div>
+        <h3>Esportivo espelhado</h3>
+        <p>Metal, máscara e lentes espelhadas azul, vermelha e dourada.</p>
+        <a href="https://wa.me/5511945912508?text=Oi!%20Quero%20ver%20os%20modelos%20de%20%C3%B3culos%20esportivo%20espelhado" target="_blank" rel="noopener">Ver modelos</a>
+      </article>
+      <article class="card">
+        <div class="lens carousel" role="group" aria-roledescription="carrossel" aria-label="Fotos dos óculos de sol casual"><div class="track"><div class="slide"><img src="images/casual-1.jpg" width="900" height="600" alt="Óculos de sol casual com armação marrom e hastes de bambu sobre uma mureta, visto de lado"></div><div class="slide"><img src="images/casual-2.jpg" width="900" height="600" alt="Óculos de sol casual redondo de armação marrom, visto de frente" loading="lazy"></div><div class="slide"><img src="images/casual-3.jpg" width="900" height="600" alt="Óculos de sol casual preto fosco sobre uma mureta, visto de lado" loading="lazy"></div><div class="slide"><img src="images/casual-4.jpg" width="900" height="600" alt="Óculos de sol casual preto fosco, visto de frente" loading="lazy"></div><div class="slide"><img src="images/casual-5.jpg" width="900" height="600" alt="Óculos de sol redondo de metal preto com protetores laterais, visto de lado" loading="lazy"></div><div class="slide"><img src="images/casual-6.jpg" width="900" height="600" alt="Óculos de sol redondo de metal preto com protetores laterais, visto de frente" loading="lazy"></div></div><div class="dots"><button type="button" aria-label="Ver foto 1" aria-current="true"></button><button type="button" aria-label="Ver foto 2"></button><button type="button" aria-label="Ver foto 3"></button><button type="button" aria-label="Ver foto 4"></button><button type="button" aria-label="Ver foto 5"></button><button type="button" aria-label="Ver foto 6"></button></div></div>
+        <h3>Sol casual</h3>
+        <p>Quadrados e redondos pro dia a dia, alguns com haste de madeira.</p>
+        <a href="https://wa.me/5511945912508?text=Oi!%20Quero%20ver%20os%20modelos%20de%20%C3%B3culos%20de%20sol%20casual" target="_blank" rel="noopener">Ver modelos</a>
+      </article>
+      <article class="card">
+        <div class="lens carousel" role="group" aria-roledescription="carrossel" aria-label="Fotos das armações de grau"><div class="track"><div class="slide"><img src="images/grau-1.jpg" width="900" height="600" alt="Armação de grau de metal dourado com detalhe azul sobre uma mesa, vista de lado"></div><div class="slide"><img src="images/grau-2.jpg" width="900" height="600" alt="Armação de grau redonda de metal trançado sobre uma mesa, vista de frente" loading="lazy"></div><div class="slide"><img src="images/grau-3.jpg" width="900" height="690" alt="Armação de grau redonda de metal cor de cobre com aro trançado, vista em ângulo" loading="lazy"></div><div class="slide"><img src="images/grau-4.jpg" width="900" height="600" alt="Armação de grau de metal preto quadrada sobre uma mesa, vista de lado" loading="lazy"></div><div class="slide"><img src="images/grau-5.jpg" width="900" height="600" alt="Armação de grau de metal preto quadrada sobre uma mesa, vista de frente" loading="lazy"></div></div><div class="dots"><button type="button" aria-label="Ver foto 1" aria-current="true"></button><button type="button" aria-label="Ver foto 2"></button><button type="button" aria-label="Ver foto 3"></button><button type="button" aria-label="Ver foto 4"></button><button type="button" aria-label="Ver foto 5"></button></div></div>
+        <h3>Armação de grau</h3>
+        <p>Acetato, metal, redondas e hexagonais. É só trazer sua receita.</p>
+        <a href="https://wa.me/5511945912508?text=Oi!%20Quero%20ver%20as%20arma%C3%A7%C3%B5es%20de%20grau" target="_blank" rel="noopener">Ver modelos</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="receita" id="grau">
+  <div class="wrap">
+    <div class="head" style="margin-bottom:0">
+      <h2>Tem receita? A gente monta seu óculos de grau</h2>
+      <p>Você escolhe a armação, a gente coloca as lentes da sua receita e entrega pronto na sua casa.</p>
+    </div>
+    <div>
+      <ol class="steps">
+        <li><div><h3>Mande a foto da receita</h3><p>Pelo WhatsApp, junto com o estilo de armação que você procura.</p></div></li>
+        <li><div><h3>Escolha armação e lente</h3><p>A gente te mostra os modelos e o valor de cada combinação.</p>
+          <div class="lentes"><span>Antirreflexo</span><span>Filtro azul</span><span>Fotossensível</span><span>Multifocal</span></div></div></li>
+        <li><div><h3>Receba em casa</h3><p>Óculos pronto, com estojo e flanela, entregue em todo o Brasil.</p></div></li>
+      </ol>
+      <p class="note">Trabalhamos com a receita do seu oftalmologista. Não realizamos exame de vista.</p>
+    </div>
+  </div>
+</section>
+
+<section class="why">
+  <div class="wrap">
+    <figure class="why-photo"><img src="images/oculos-esportivo.jpg" srcset="images/oculos-esportivo-800.jpg 800w, images/oculos-esportivo.jpg 1402w" sizes="(max-width:900px) 92vw, 520px" width="1402" height="1122" loading="lazy" alt="Óculos esportivo de lente espelhada sobre uma mureta ao pôr do sol"></figure>
+    <div>
+      <h2>Por que comprar na Sunshine</h2>
+      <dl>
+        <div><dt>Preço de fábrica</dt><dd>Sem o custo de loja de shopping. O desconto fica com você.</dd></div>
+        <div><dt>Garantia de verdade</dt><dd>Na lente e na armação. Se der problema, a gente resolve.</dd></div>
+        <div><dt>Chega completo</dt><dd>Todo óculos vai com estojo, flanela e um brinde.</dd></div>
+        <div><dt>Paga do seu jeito</dt><dd>Pix, débito, dinheiro ou crédito em até 4x.</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="sobre">
+  <div class="wrap">
+    <div>
+      <h2>Receba seu óculos em casa</h2>
+      <p>Escolheu o seu? A gente entrega para todo o Brasil. Sem sair de casa, sem fila e sem complicação: você combina tudo direto com a gente pelo WhatsApp.</p>
+      <ul class="dlv">
+        <li><b>Escolha</b> o modelo e, se for de grau, mande a foto da receita.</li>
+        <li><b>Combine</b> o endereço e a forma de entrega com a gente.</li>
+        <li><b>Receba</b> o óculos pronto, com estojo e flanela, e pague do seu jeito: Pix, débito, dinheiro ou crédito em até 4x.</li>
+      </ul>
+      <div class="prazos" aria-label="Prazos de entrega">
+        <div><b>1 dia útil</b><span>Óculos de sol sem grau</span></div>
+        <div><b>até 3 dias úteis</b><span>Grau de visão simples</span></div>
+        <div><b>até 10 dias úteis</b><span>Multifocal</span></div>
+      </div>
+      <a class="btn btn-wa" href="https://wa.me/5511945912508?text=Oi!%20Vim%20pelo%20site%20e%20quero%20ver%20os%20modelos%20da%20Sunshine%20Lens" target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Pedir meu óculos</a>
+    </div>
+    <svg class="bigsun" viewBox="0 0 100 100" aria-hidden="true"><use href="#mark"/></svg>
+  </div>
+</section>
+<section class="guia" id="guia">
+  <div class="wrap">
+    <div class="head">
+      <h2>Ainda está na dúvida de qual óculos escolher?</h2>
+      <p>Entenda qual armação e qual lente mais combina com seu perfil</p>
+    </div>
+    <div class="tabs" role="tablist" aria-label="Escolha o assunto">
+      <button type="button" role="tab" id="tab-arm" aria-controls="painel-arm" aria-selected="true">Armações</button>
+      <button type="button" role="tab" id="tab-len" aria-controls="painel-len" aria-selected="false" tabindex="-1">Lentes</button>
+    </div>
+    <div class="painel" role="tabpanel" id="painel-arm" aria-labelledby="tab-arm">
+      <h3 class="gtitle">Do que a armação é feita</h3>
+      <p class="gsub">O material muda o peso, a durabilidade, o conforto e o visual do óculos.</p>
+      <div class="ggrid"><article class="gcard"><span class="gtag">Cor e personalidade</span><h4>Acetato</h4><p>Material derivado de celulose, com cores e estampas que são do próprio material, então não descascam com o uso. Dá um visual marcante e costuma ser bem confortável.</p><p class="gline"><b class="ok">Bom para</b> quem quer um óculos com estilo e presença no rosto.</p></article><article class="gcard"><span class="gtag">Leve e discreto</span><h4>Metal</h4><p>Ligas como aço inoxidável e monel, em aros finos e elegantes. Hastes e plaquetas costumam ser ajustáveis, o que ajuda a deixar o óculos firme no rosto.</p><p class="gline"><b class="ok">Bom para</b> uso diário, visual clássico e armações redondas ou finas.</p></article><article class="gcard"><span class="gtag">Leve e moderno</span><h4>Alumínio</h4><p>Metal muito leve e resistente à corrosão, muito usado em modelos de design moderno e esportivo.</p><p class="gline"><b class="ok">Bom para</b> quem busca leveza, resistência e um visual mais atual.</p></article><article class="gcard"><span class="gtag">Ultraleve e resistente</span><h4>Titânio</h4><p>Um dos materiais mais leves e resistentes. Não enferruja e costuma ser bem tolerado por quem tem pele sensível.</p><p class="gline"><b class="ok">Bom para</b> usar o óculos o dia todo e peles sensíveis.</p></article><article class="gcard"><span class="gtag">Flexível e durável</span><h4>TR90 (nylon flexível)</h4><p>Polímero ultraleve que dobra e volta ao formato original. Muito usado em armações esportivas e infantis.</p><p class="gline"><b class="ok">Bom para</b> esportes, crianças e rotina agitada.</p></article><article class="gcard"><span class="gtag">Natural e único</span><h4>Madeira e bambu</h4><p>Hastes ou armações com veios naturais: cada peça é diferente da outra. São leves e dão um toque de estilo.</p><p class="gline"><b class="ok">Bom para</b> quem quer um visual natural e exclusivo.</p></article></div>
+    </div>
+    <div class="painel" role="tabpanel" id="painel-len" aria-labelledby="tab-len" hidden>
+      <h3 class="gtitle">Material da lente</h3>
+      <p class="gsub">Define o peso, a espessura e a resistência a impactos.</p>
+      <div class="ggrid"><article class="gcard"><span class="gtag">Mais comum</span><h4>Resina (acrílica / CR-39)</h4><p>Lente leve, com ótima qualidade óptica e muito usada no dia a dia. Pode receber os tratamentos de proteção.</p><p class="gline"><b class="ok">Bom para</b> a maioria das pessoas, em graus baixos e médios.</p></article><article class="gcard"><span class="gtag">Resistente a impacto</span><h4>Policarbonato</h4><p>Muito resistente a batidas, leve e já bloqueia os raios UV. Mais segura que a resina.</p><p class="gline"><b class="ok">Bom para</b> crianças, esportes e armações sem aro (parafusadas).</p></article><article class="gcard"><span class="gtag">Mais fina e leve</span><h4>Alto índice (1.67, 1.74)</h4><p>Lentes mais finas e leves, que deixam a espessura bem menor em graus altos e melhoram o visual do óculos.</p><p class="gline"><b class="ok">Bom para</b> graus mais altos e quem quer lente discreta.</p></article></div>
+      <h3 class="gtitle">Tipo de lente</h3>
+      <p class="gsub">Depende da sua receita e do que você precisa enxergar no dia a dia.</p>
+      <div class="ggrid"><article class="gcard"><span class="gtag">Mais usada</span><h4>Visão simples (monofocal)</h4><p>Um único grau em toda a lente. Corrige miopia, hipermetropia e astigmatismo, para enxergar bem de longe ou de perto.</p><p class="gline"><b class="ok">Bom para</b> quem precisa corrigir um tipo de dificuldade de visão.</p></article><article class="gcard"><span class="gtag">Longe e perto</span><h4>Multifocal (progressiva)</h4><p>Vários graus na mesma lente, com transição suave entre longe, distância intermediária e perto, sem linha visível. Indicada para vista cansada (presbiopia).</p><p class="gline"><b class="ok">Bom para</b> quem precisa de mais de um grau e não quer trocar de óculos.</p></article><article class="gcard"><span class="gtag">Dois graus em um</span><h4>Bifocal</h4><p>Duas áreas de grau na mesma lente, uma para longe e outra para perto, com a divisão bem definida entre as duas áreas.</p><p class="gline"><b class="ok">Bom para</b> quem precisa de dois graus e prefere uma divisão bem definida entre longe e perto.</p></article><article class="gcard"><span class="gtag">Trabalho e estudo</span><h4>Ocupacional (para telas)</h4><p>Lente pensada para a distância do computador e da leitura, com menos esforço para quem passa horas diante de telas.</p><p class="gline"><b class="ok">Bom para</b> quem trabalha ou estuda muito tempo no computador.</p></article></div>
+      <h3 class="gtitle">Tratamentos e extras</h3>
+      <p class="gsub">Camadas que podem ser adicionadas para proteger e dar mais conforto.</p>
+      <div class="ggrid"><article class="gcard"><span class="gtag">Mais conforto</span><h4>Antirreflexo</h4><p>Reduz reflexos e brilhos nas lentes. Melhora o conforto ao dirigir à noite e usar telas, e o óculos fica mais bonito em fotos e vídeos.</p><p class="gline"><b class="ok">Bom para</b> quem dirige à noite, usa telas ou quer um visual mais limpo.</p></article><article class="gcard"><span class="gtag">Para telas</span><h4>Filtro de luz azul</h4><p>Reduz parte da luz azul emitida por celulares, computadores e lâmpadas de LED. Muita gente sente mais conforto ao usar telas por muitas horas.</p><p class="gline"><b class="ok">Bom para</b> quem passa o dia no celular ou no computador.</p></article><article class="gcard"><span class="gtag">Escurece no sol</span><h4>Fotossensível (fotocromática)</h4><p>Escurece ao ficar exposta ao sol e volta a ficar clara em ambientes fechados. Um óculos só para dentro e fora de casa. Muita gente conhece como lente "Transitions", que é o nome de uma das marcas desse tipo de lente.</p><p class="gline"><b class="ok">Bom para</b> quem vive entrando e saindo de ambientes.</p></article><article class="gcard"><span class="gtag">Proteção diária</span><h4>Proteção UV</h4><p>Bloqueia os raios ultravioleta, que prejudicam os olhos ao longo dos anos. Importante tanto nos óculos de sol quanto nos de grau.</p><p class="gline"><b class="ok">Bom para</b> todo mundo, no sol e no dia a dia, para cuidar da saúde dos olhos.</p></article><article class="gcard"><span class="gtag">Mais durabilidade</span><h4>Anti-risco</h4><p>Camada que deixa a lente mais resistente aos arranhões do dia a dia.</p><p class="gline"><b class="ok">Bom para</b> quem usa o óculos o dia todo e quer a lente conservada por mais tempo.</p></article><article class="gcard"><span class="gtag">Mais fácil de limpar</span><h4>Hidrofóbico</h4><p>Repele água, gordura e poeira. A lente suja menos e fica mais fácil de limpar.</p><p class="gline"><b class="ok">Bom para</b> quem quer praticidade na limpeza do dia a dia.</p></article></div>
+      <h3 class="gtitle">Para óculos de sol</h3>
+      <p class="gsub">Dois acabamentos que fazem muita diferença no sol.</p>
+      <div class="ggrid"><article class="gcard"><span class="gtag">Menos reflexo</span><h4>Polarizada</h4><p>Elimina os reflexos fortes de superfícies como água, asfalto e vidros, o que dá mais conforto e nitidez.</p><p class="gline"><b class="ok">Bom para</b> dirigir, praia e atividades ao ar livre.</p></article><article class="gcard"><span class="gtag">Visual marcante</span><h4>Espelhada</h4><p>Tem uma camada refletiva por fora, que reduz a entrada de luz e dá o visual dos modelos esportivos, em cores como azul, vermelho e dourado.</p><p class="gline"><b class="ok">Bom para</b> dias de muito sol e quem gosta de um visual forte.</p></article></div>
+    </div>
+    <div class="gcta">
+      <p>As informações acima são gerais. A melhor combinação depende da sua receita e do seu dia a dia. Manda a foto da receita que a gente te ajuda a escolher.</p>
+      <a class="btn btn-wa" href="https://wa.me/5511945912508?text=Oi!%20Quero%20ajuda%20para%20escolher%20armação%20e%20lente" target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Quero ajuda para escolher</a>
+    </div>
+  </div>
+  <noscript><style>.painel[hidden]{display:block}.tabs{display:none}</style></noscript>
+</section>
+
+<section class="news" id="novidades">
+  <div class="wrap">
+    <div class="newsbox">
+      <div>
+        <h2>Quer receber novidades da Sunshine Lens?</h2>
+        <p>Deixe aqui seus dados e receba informações dos novos produtos.</p>
+      </div>
+      <form class="nform" id="nform" novalidate>
+        <label>Nome<input name="nome" type="text" autocomplete="name" required placeholder="Seu nome"></label>
+        <label>Telefone (WhatsApp)<input name="tel" type="tel" inputmode="tel" autocomplete="tel" required placeholder="(11) 90000-0000"></label>
+        <label>E-mail<input name="email" type="email" autocomplete="email" required placeholder="voce@email.com"></label>
+        <button class="btn" type="submit">Quero receber novidades</button>
+        <div class="nmsg" id="nmsg" role="status" aria-live="polite"></div>
+        <small>Usamos seus dados só para enviar novidades da loja.</small>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <a class="brand" href="#inicio"><svg viewBox="0 0 100 100"><use href="#mark"/></svg><b>Sunshine Lens</b></a>
+    <p>Loja online de óculos de sol e de grau.</p>
+    <div class="links">
+      <a href="https://www.instagram.com/sunshinelens_/" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#ig"/></svg>@sunshinelens_</a>
+      <a href="https://wa.me/5511945912508" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#wa"/></svg>(11) 94591-2508</a>
+    </div>
+  </div>
+</footer>
+
+<a class="float" href="https://wa.me/5511945912508?text=Oi!%20Vim%20pelo%20site%20e%20quero%20ver%20os%20modelos%20da%20Sunshine%20Lens" target="_blank" rel="noopener" aria-label="Pedir pelo WhatsApp"><svg style="color:#fff"><use href="#wa"/></svg></a>
+<script>
+document.querySelectorAll(".lens:not(.carousel), .carousel .slide").forEach(function(l){var i=l.querySelector("img");if(i)l.style.setProperty("--photo","url("+i.src+")")});
+document.querySelectorAll(".carousel").forEach(function(c){
+  var track=c.querySelector(".track"), dots=c.querySelectorAll(".dots button"), n=dots.length, cur=0, timer=null;
+  var reduce=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  function go(k){cur=(k+n)%n; track.style.transform="translateX(-"+cur*100+"%)"; dots.forEach(function(d,j){d.setAttribute("aria-current",j===cur?"true":"false")});}
+  function play(){if(reduce||timer)return; timer=setInterval(function(){go(cur+1)},3500);}
+  function stop(){clearInterval(timer); timer=null;}
+  dots.forEach(function(d,j){d.addEventListener("click",function(){go(j);stop();play();})});
+  c.addEventListener("mouseenter",stop); c.addEventListener("mouseleave",play);
+  c.addEventListener("focusin",stop); c.addEventListener("focusout",play);
+  var x0=null;
+  c.addEventListener("touchstart",function(e){x0=e.touches[0].clientX;stop();},{passive:true});
+  c.addEventListener("touchend",function(e){if(x0!==null){var dx=e.changedTouches[0].clientX-x0; if(Math.abs(dx)>35)go(cur+(dx<0?1:-1)); x0=null;} play();});
+  document.addEventListener("visibilitychange",function(){document.hidden?stop():play();});
+  play();
+});
+(function(){
+  var tabs=document.querySelectorAll('.tabs [role="tab"]');
+  function show(t){tabs.forEach(function(b){var on=b===t;b.setAttribute("aria-selected",on?"true":"false");b.tabIndex=on?0:-1;document.getElementById(b.getAttribute("aria-controls")).hidden=!on;});}
+  tabs.forEach(function(b,i){
+    b.addEventListener("click",function(){show(b)});
+    b.addEventListener("keydown",function(e){if(e.key==="ArrowRight"||e.key==="ArrowLeft"){var n=tabs[(i+(e.key==="ArrowRight"?1:tabs.length-1))%tabs.length];show(n);n.focus();}});
+  });
+})();
+</script>
+<script>
+(function(){var f=document.getElementById("nform");if(!f)return;var m=document.getElementById("nmsg"),t=f.tel;
+t.addEventListener("input",function(){var d=t.value.replace(/\D/g,"").slice(0,11),o=d;if(d.length>6)o="("+d.slice(0,2)+") "+d.slice(2,d.length>10?7:6)+"-"+d.slice(d.length>10?7:6);else if(d.length>2)o="("+d.slice(0,2)+") "+d.slice(2);t.value=o});
+f.addEventListener("submit",function(e){e.preventDefault();var ok=true;
+["nome","tel","email"].forEach(function(n){var i=f[n],v=i.value.trim(),good=n==="nome"?v.length>1:n==="tel"?v.replace(/\D/g,"").length>=10:/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v);i.setAttribute("aria-invalid",good?"false":"true");if(!good)ok=false});
+if(!ok){m.className="nmsg err";m.textContent="Confira os campos destacados.";return}
+var txt="Oi! Quero receber novidades da Sunshine Lens.%0ANome: "+encodeURIComponent(f.nome.value.trim())+"%0ATelefone: "+encodeURIComponent(f.tel.value.trim())+"%0AE-mail: "+encodeURIComponent(f.email.value.trim());
+m.className="nmsg ok";m.textContent="Pronto! Abrindo o WhatsApp para confirmar seu cadastro.";
+window.open("https://wa.me/5511945912508?text="+txt,"_blank","noopener");f.reset()})})();
+</script>
+<script>
+(function(){
+var rm=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+var top=document.querySelector(".top"),prog=document.getElementById("prog"),tick=false;
+function sc(){var y=window.scrollY||0,h=document.documentElement.scrollHeight-innerHeight;top.classList.toggle("scrolled",y>8);if(!rm)prog.style.transform="scaleX("+(h>0?Math.min(y/h,1):0)+")";tick=false}
+addEventListener("scroll",function(){if(!tick){tick=true;requestAnimationFrame(sc)}},{passive:true});sc();
+if(rm)return;
+var sel=[".head",".guia .tabs",".card",".gcard",".steps li",".why .wrap > *",".band .wrap > *",".newsbox",".gcta",".why-photo"];
+var els=[];sel.forEach(function(q){document.querySelectorAll(q).forEach(function(e){if(els.indexOf(e)<0)els.push(e)})});
+els.forEach(function(e){var p=e.parentElement,i=Array.prototype.indexOf.call(p.children,e);e.style.setProperty("--d",Math.min(i,5)*.09+"s");e.classList.add("rv")});
+if("IntersectionObserver"in window){var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add("in");io.unobserve(x.target)}})},{threshold:.12,rootMargin:"0px 0px -6% 0px"});els.forEach(function(e){io.observe(e)})}else els.forEach(function(e){e.classList.add("in")});
+var sc2=document.querySelector(".scene"),hero=document.querySelector(".hero");
+if(sc2&&window.matchMedia("(hover:hover) and (pointer:fine)").matches){var raf=0;hero.addEventListener("pointermove",function(e){var r=hero.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;cancelAnimationFrame(raf);raf=requestAnimationFrame(function(){sc2.style.transform="perspective(900px) rotateY("+x*7+"deg) rotateX("+-y*5+"deg) translate("+x*8+"px,"+y*6+"px)"})});hero.addEventListener("pointerleave",function(){sc2.style.transform=""})}
+})();
+</script>
+<script>
+(function(){
+var FRAMES=[{id:"arm1",nome:"Armação metal bronze",front:"provador/arm1-frente.png",side:"provador/arm1-lado.png",k:0.98,dy:0}];
+var CDN="https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@0.10.14";
+var MODEL="https://storage.googleapis.com/mediapipe-models/face_landmarker/face_landmarker/float16/1/face_landmarker.task";
+var $=function(i){return document.getElementById(i)};
+var root=$("try"),openB=$("tryOpen");if(!root||!openB)return;
+var intro=$("tryIntro"),stage=$("tryStage"),bar=$("tryBar"),cv=$("tryC"),msg=$("tryMsg"),err=$("tryErr"),go=$("tryGo"),chips=$("tryChips"),wa=$("tryWa");
+var ctx=cv.getContext("2d"),video=document.createElement("video");video.playsInline=true;video.muted=true;
+var stream=null,fl=null,running=false,cur=0,imgs={},S=null,lost=0,lastTs=-1;
+function load(src){return new Promise(function(ok,ko){var i=new Image();i.onload=function(){ok(i)};i.onerror=ko;i.src=src})}
+function setWa(){var f=FRAMES[cur];wa.href="https://wa.me/5511945912508?text="+encodeURIComponent("Oi! Provei a "+f.nome+" no provador virtual do site da Sunshine Lens e quero saber mais.")}
+function buildChips(){chips.innerHTML="";FRAMES.forEach(function(f,i){var b=document.createElement("button");b.type="button";b.setAttribute("aria-pressed",i===cur?"true":"false");b.innerHTML='<img alt="" src="'+f.front+'"><span>'+f.nome+'</span>';b.onclick=function(){cur=i;S=null;buildChips();setWa()};chips.appendChild(b)})}
+function open(){root.hidden=false;document.body.classList.add("try-open");intro.hidden=false;stage.hidden=true;bar.hidden=true;err.textContent="";go.disabled=false;go.textContent="Ativar câmera";go.focus()}
+function close(){running=false;if(stream){stream.getTracks().forEach(function(t){t.stop()});stream=null}root.hidden=true;document.body.classList.remove("try-open");openB.focus()}
+openB.addEventListener("click",open);$("tryX").addEventListener("click",close);
+document.addEventListener("keydown",function(e){if(e.key==="Escape"&&!root.hidden)close()});
+async function getFL(){
+  if(window.__fakeFL)return window.__fakeFL;
+  var m=await import(CDN+"/vision_bundle.mjs");
+  var fs=await m.FilesetResolver.forVisionTasks(CDN+"/wasm");
+  var mk=function(d){return m.FaceLandmarker.createFromOptions(fs,{baseOptions:{modelAssetPath:MODEL,delegate:d},runningMode:"VIDEO",numFaces:1})};
+  try{return await mk("GPU")}catch(e){return await mk("CPU")}
+}
+go.addEventListener("click",async function(){
+  err.textContent="";go.disabled=true;go.textContent="Abrindo câmera...";
+  try{
+    if(!navigator.mediaDevices||!navigator.mediaDevices.getUserMedia)throw {name:"NoMedia"};
+    stream=await navigator.mediaDevices.getUserMedia({video:{facingMode:"user",width:{ideal:720},height:{ideal:960}},audio:false});
+    video.srcObject=stream;await video.play();
+    go.textContent="Carregando o provador...";
+    await Promise.all(FRAMES.map(function(f){return Promise.all([load(f.front),load(f.side)]).then(function(r){imgs[f.id]={f:r[0],s:r[1]}})}));
+    fl=await getFL();
+    cv.width=video.videoWidth||720;cv.height=video.videoHeight||960;
+    intro.hidden=true;stage.hidden=false;bar.hidden=false;buildChips();setWa();
+    msg.textContent="Olhe para a câmera, com o rosto no centro.";S=null;lost=0;running=true;requestAnimationFrame(loop)
+  }catch(e){
+    if(stream){stream.getTracks().forEach(function(t){t.stop()});stream=null}
+    go.disabled=false;go.textContent="Tentar de novo";
+    err.textContent=(e&&(e.name==="NotAllowedError"||e.name==="PermissionDeniedError"))?"Precisamos da permissão da câmera para o provador funcionar. Libere o acesso nas configurações do navegador e tente de novo.":(e&&e.name==="NotFoundError")?"Não encontrei uma câmera neste aparelho.":"Não consegui abrir o provador agora. Tente de novo ou fale com a gente pelo WhatsApp.";
+    if(window.console)console.warn(e)
+  }
+});
+function d(a,b){return Math.hypot(a.x-b.x,a.y-b.y)}
+function sm(k,v){S[k]=S[k]==null?v:S[k]+(v-S[k])*.45;return S[k]}
+function loop(){
+  if(!running)return;
+  var W=cv.width,H=cv.height,ts=performance.now();
+  if(ts<=lastTs)ts=lastTs+1;lastTs=ts;
+  ctx.setTransform(-1,0,0,1,W,0);
+  ctx.drawImage(video,0,0,W,H);
+  var res=null;try{res=fl.detectForVideo(video,ts)}catch(e){}
+  var lm=res&&res.faceLandmarks&&res.faceLandmarks[0];
+  if(lm){
+    lost=0;if(msg.textContent)msg.textContent="";
+    var P=function(i){return{x:lm[i].x*W,y:lm[i].y*H}};
+    var R=P(33),L=P(263),cR=P(234),cL=P(454),nose=P(1);
+    var eR=lm.length>473?P(468):R,eL=lm.length>473?P(473):L;
+    if(!S)S={};
+    var fw=d(cR,cL),cx=sm("x",(eR.x+eL.x)/2),cy=sm("y",(eR.y+eL.y)/2),ang=sm("a",Math.atan2(L.y-R.y,L.x-R.x)),yaw=sm("r",(nose.x-(cR.x+cL.x)/2)/fw),w=sm("w",fw*FRAMES[cur].k);
+    var im=imgs[FRAMES[cur].id],fh=w*im.f.height/im.f.width,a=Math.max(0,Math.min(1,(Math.abs(yaw)-.07)/.09));
+    ctx.save();ctx.translate(cx,cy);ctx.rotate(ang);
+    if(a<1){ctx.globalAlpha=1-a;ctx.drawImage(im.f,-w/2,-fh*(.5+FRAMES[cur].dy),w,fh)}
+    if(a>0){var sc=fh*.9/(im.s.height*.72),sw=im.s.width*sc,sh=im.s.height*sc;ctx.globalAlpha=a;ctx.scale(yaw<0?-1:1,1);ctx.drawImage(im.s,-sw*.30,-sh*.62,sw,sh)}
+    ctx.restore();ctx.globalAlpha=1
+  }else{
+    if(++lost>12){msg.textContent="Não encontrei seu rosto. Centralize e fique de frente para a câmera.";S=null}
+  }
+  requestAnimationFrame(loop)
+}
+$("tryShot").addEventListener("click",function(){
+  cv.toBlob(function(b){if(!b)return;var f=new File([b],"sunshine-lens-provador.png",{type:"image/png"});
+    if(navigator.canShare&&navigator.canShare({files:[f]})){navigator.share({files:[f],title:"Minha prova na Sunshine Lens"}).catch(function(){})}
+    else{var u=URL.createObjectURL(b),l=document.createElement("a");l.href=u;l.download=f.name;document.body.appendChild(l);l.click();l.remove();setTimeout(function(){URL.revokeObjectURL(u)},4000)}
+  },"image/png")
+});
+})();
+</script>
+</body>
+</html>
